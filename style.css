@@ -18,7 +18,14 @@ body {
   width: 813px;
   height: 877px;
 
-  transform: scale(clamp(0.6, 60vw / 813, 1));
+  transform: scale(
+    clamp(
+      0.6,
+      min(40vw / 813, 70vh / 877),
+      1
+    )
+  );
+
   transform-origin: center;
 }
 
