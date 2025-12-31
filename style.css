@@ -34,11 +34,17 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+
+  width: 100%;
+  height: 100%;
 }
 
 .card {
+  width: 152px;        /* 카드 원본 폭 */
+  height: auto;
+
   left: 50%;
-  top: 40px; /* ← 원본 기준 위치 */
+  top: 40px;           /* 원본 기준 위치 */
   transform: translateX(-50%);
 }
 
