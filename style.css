@@ -49,7 +49,7 @@ body {
 .card {
   position: absolute;
   left: 50%;
-  top: 40px;              /* 원본 기준 위치 */
+  top: 335px;
   transform: translateX(-50%);
 }
 
