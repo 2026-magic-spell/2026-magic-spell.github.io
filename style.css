@@ -13,10 +13,18 @@ body {
 }
 
 .stack {
+  position: relative;
+
+  width: 813px;
+  height: 877px;
+
   transform: scale(
     clamp(0.6, min(40vw / 813, 40vh / 877), 1)
   );
+
+  transform-origin: center;
 }
+
 
 .envelope,
 .card {
