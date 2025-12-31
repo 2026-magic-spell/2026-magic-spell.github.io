@@ -40,12 +40,13 @@ body {
 }
 
 .card {
-  width: 152px;        /* 카드 원본 폭 */
-  height: auto;
-
+.card {
+  position: absolute;
   left: 50%;
-  top: 40px;           /* 원본 기준 위치 */
+  top: 40px;              /* 원본 기준 위치 */
   transform: translateX(-50%);
+}
+
 }
 
 .envelope.back {
