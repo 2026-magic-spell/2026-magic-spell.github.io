@@ -15,8 +15,10 @@ body {
   position: relative;
   width: 60vw;
   max-width: 300px;
-  aspect-ratio: 240 / 150; /* 봉투 기준 */
+  aspect-ratio: 240 / 150;
+  background: rgba(255, 0, 0, 0.1);
 }
+
 
 .envelope {
   position: absolute;
