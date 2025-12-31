@@ -13,23 +13,18 @@ body {
   align-items:center;
 }
 
-.stack{
+.stack {
   position: relative;
   width: 813px;
   height: 877px;
 
-  --pad: max(4vw, 24px);
-
   transform: scale(
-    clamp(
-      0.6,
-      min(
-        calc((100vw - (2 * var(--pad))) / 813),
-        calc((100dvh - (2 * var(--pad))) / 877)
-      ),
-      1
+    min(
+      calc((100vw - (2 * var(--pad))) / 813),
+      calc((100dvh - (2 * var(--pad))) / 877)
     )
   );
+
   transform-origin: center;
 }
 
