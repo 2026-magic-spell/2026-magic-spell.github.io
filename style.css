@@ -37,7 +37,38 @@ body {
     opacity 0.5s ease;
 }
 
-.envelope.open .card {
-  transform: translateY(-60px) rotate(-6deg);
+.scene {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+/* STEP 1: 카드 등장 */
+.scene.step-1 .card {
   opacity: 1;
+  transform: translate(-50%, -30px);
+}
+
+/* STEP 2: 카드 완전히 밖으로 */
+.scene.step-2 .card {
+  transform: translate(-50%, -90px);
+}
+
+/* STEP 3: 봉투 사라짐 */
+.scene.step-3 .envelope {
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+/* STEP 4: 카드 중앙 */
+.scene.step-4 .card {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* STEP 5: 엔딩 회전 */
+.scene.step-5 .card {
+  transform: translate(-50%, -50%) rotate(-8deg);
 }
