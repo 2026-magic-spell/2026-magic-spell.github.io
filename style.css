@@ -18,13 +18,7 @@ body {
   width: 813px;
   height: 877px;
 
-  transform: scale(
-    min(
-      calc((100vw - (2 * var(--pad))) / 813),
-      calc((100dvh - (2 * var(--pad))) / 877)
-    )
-  );
-
+  transform: scale;
   transform-origin: center;
 }
 
