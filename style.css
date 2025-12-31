@@ -1,5 +1,5 @@
 body {
-  background: #f6f4ef;
+  background: #000000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,7 +10,7 @@ body {
   position: relative;
   width: 240px;
   height: 150px;
-  background: #e3ded4;
+  background: #f14f4f;
   border-radius: 4px;
   overflow: hidden;
   cursor: pointer;
@@ -18,15 +18,17 @@ body {
 
 .card {
   position: absolute;
-  width: 200px;
-  height: 130px;
+
+  width: 40vw;
+  max-width: 220px;
+  aspect-ratio: 152 / 102;
+
   background: #fffdf8;
   top: 20px;
   left: 20px;
   border-radius: 2px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 
-  /* 시작 상태: 봉투 안 */
   transform: translateY(50px) rotate(0deg);
   opacity: 0;
 
