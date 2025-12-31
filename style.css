@@ -3,31 +3,36 @@ body {
   background: #000;
 }
 
-.scene {
+.scene{
   width: 100vw;
   height: 100vh;
-
-  padding: 6vw;
+  padding: max(4vw, 24px);
   box-sizing: border-box;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
 
-
-.stack {
+.stack{
   position: relative;
-
   width: 813px;
   height: 877px;
 
-  transform: scale(
-    clamp(0.6, min(40vw / 813, 40vh / 877), 1)
-  );
+  --pad: max(4vw, 24px);
 
+  transform: scale(
+    clamp(
+      0.6,
+      min(
+        calc((100vw - (2 * var(--pad))) / 813),
+        calc((100dvh - (2 * var(--pad))) / 877)
+      ),
+      1
+    )
+  );
   transform-origin: center;
 }
+
 
 
 .envelope,
