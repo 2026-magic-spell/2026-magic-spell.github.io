@@ -13,26 +13,35 @@ body {
   align-items:center;
 }
 
-.stack {
+.stack{
   position: relative;
   width: 813px;
   height: 877px;
 
-  transform: scale;
+  --pad: max(4vw, 24px);
+
+  transform: scale(
+    min(
+      calc((100vw - (2 * var(--pad))) / 813),
+      calc((100dvh - (2 * var(--pad))) / 877)
+    )
+  );
   transform-origin: center;
 }
-
 
 
 .envelope,
 .card {
   position: absolute;
-  top: 0;
-  left: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: contain;
 }
+
 
 
 .card {
